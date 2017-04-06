@@ -1,0 +1,45 @@
+﻿@model StormStyleTransfer.FrontEnd.Models.HomeModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+
+<div class="row">
+    <div class="col-md-12">
+        <h2>Style Transfer</h2>
+        <p>Choose an image to upload, and have it transformed into the style of one of the images below</p>
+        <form class="form-horizontal" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label asp-for="CheckpointModel" class="col-sm-2 control-label">Reference image:</label>
+                <div class="col-sm-10">
+                    <select asp-for="CheckpointModel" class="form-control">
+                        <option value="la_muse">La Muse - Pablo Picasso</option>
+                        <option value="rain_princess">Rain Princess - Leonid Afremov</option>
+                        <option value="scream">The Scream - Edvard Munch</option>
+                        <option value="wreck">The Shipwreck of the Minotaur - JMW Turner</option>
+                        <option value="udnie">Udnie (Young American Girl, The Dance) - Francis Picabia</option>
+                        <option value="wave">The Great Wave off Kanagawa - Katsushika Hokusai</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label asp-for="PostedFile" class="col-sm-2 control-label">Upload Image</label>
+                <div class="col-sm-10">
+                    <input type="file" asp-for="PostedFile" />
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit">Submit Image</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <h3>Reference images</h2>
+        
+    </div>
+</div>
+
