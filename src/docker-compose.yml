@@ -2,7 +2,7 @@ version: "2"
 services:
   evaluate:
     build: ./evaluate
-    command: python /code/evaluate.py
+    command: python /code/app.py
     ports: 
       - "5000:5000"
     volumes:

@@ -1,6 +1,5 @@
 # Adapted from https://github.com/lengstrom/fast-style-transfer/blob/master/evaluate.py
 import sys
-sys.path.insert(0, 'src')
 import tensorflow as tf
 import transform
 from utils import get_img, save_img
@@ -13,6 +12,7 @@ DEVICE = "/cpu:0"
 def ffwd(data_in, paths_out, checkpoint_dir, device_t='/cpu:0', batch_size=4):
     assert len(paths_out) > 0
     is_paths = type(data_in[0]) == str
+    print(type(data_in[0]))
     if is_paths:
         assert len(data_in) == len(paths_out)
         img_shape = get_img(data_in[0]).shape
@@ -73,9 +73,9 @@ def ffwd_to_img(in_path, out_path, checkpoint_dir, device='/cpu:0'):
     ffwd(paths_in, paths_out, checkpoint_dir, batch_size=1, device_t=device)
 
 def main():
-    checkpoint = "/data/wreck.ckpt"
-    in_path = "/samples/geoff.jpg"
-    out_path = "/samples/geoff_wreck.jpg"
+    checkpoint = "/data/udnie.ckpt"
+    in_path = "/samples/upload/948a4130-4171-4357-995e-4fd3c6bb66a2.jpg"
+    out_path = "/samples/upload/948a4130-4171-4357-995e-4fd3c6bb66a2.out.jpg"
     ffwd_to_img(in_path, out_path, checkpoint)
 
 
