@@ -225,6 +225,27 @@ GO
 SET ANSI_PADDING ON
 
 GO
+/****** Object:  Table [dbo].[ReferenceStyles]    Script Date: 06/04/2017 17:27:58 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[ReferenceStyles](
+	[Id] [uniqueidentifier] NOT NULL,
+	[ModelName] [nvarchar](255) NULL,
+	[ImageName] [nvarchar](255) NULL,
+	[Title] [nvarchar](255) NULL,
+	[Artist] [nvarchar](255) NULL,
+	[MimeType] [nvarchar](255) NULL,
+	[Status] [int] NOT NULL,
+ CONSTRAINT [PK_ReferenceStyles] PRIMARY KEY CLUSTERED 
+(
+	[Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] 
+
+GO
+
 /****** Object:  Index [IX_AspNetRoleClaims_RoleId]    Script Date: 06/04/2017 17:27:58 ******/
 CREATE NONCLUSTERED INDEX [IX_AspNetRoleClaims_RoleId] ON [dbo].[AspNetRoleClaims]
 (

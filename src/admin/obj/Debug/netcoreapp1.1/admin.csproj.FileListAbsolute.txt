@@ -1,0 +1,8 @@
+D:\Development\GitHub\storm-style-transfer\src\admin\bin\Debug\netcoreapp1.1\admin.deps.json
+D:\Development\GitHub\storm-style-transfer\src\admin\bin\Debug\netcoreapp1.1\admin.runtimeconfig.json
+D:\Development\GitHub\storm-style-transfer\src\admin\bin\Debug\netcoreapp1.1\admin.runtimeconfig.dev.json
+D:\Development\GitHub\storm-style-transfer\src\admin\bin\Debug\netcoreapp1.1\admin.dll
+D:\Development\GitHub\storm-style-transfer\src\admin\bin\Debug\netcoreapp1.1\admin.pdb
+D:\Development\GitHub\storm-style-transfer\src\admin\obj\Debug\netcoreapp1.1\admin.AssemblyInfo.cs
+D:\Development\GitHub\storm-style-transfer\src\admin\obj\Debug\netcoreapp1.1\admin.dll
+D:\Development\GitHub\storm-style-transfer\src\admin\obj\Debug\netcoreapp1.1\admin.pdb
